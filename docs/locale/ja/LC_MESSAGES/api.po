@@ -10263,11 +10263,11 @@ msgstr ""
 #: discord.DMChannel:15 discord.GroupChannel:15 discord.TextChannel:15
 #: discord.VoiceChannel:15 of
 msgid "Returns the channel's hash."
-msgstr ""
+msgstr "チャンネルの名前を返します。"
 
 #: discord.TextChannel:19 discord.VoiceChannel:19 of
 msgid "Returns the channel's name."
-msgstr ""
+msgstr "チャンネルの名前を返します。"
 
 #: discord.TextChannel:35 discord.VoiceChannel:35 of
 #, fuzzy
@@ -10276,11 +10276,11 @@ msgstr "テキストチャンネル。"
 
 #: discord.TextChannel:41 discord.VoiceChannel:41 of
 msgid "The category channel ID this channel belongs to."
-msgstr ""
+msgstr "チャンネルの置かれているカテゴリのID。"
 
 #: discord.TextChannel:47 of
 msgid "The channel's topic. None if it doesn't exist."
-msgstr ""
+msgstr "チャンネルのチャンネルトピック。もしなければこれはNoneになります。"
 
 #: discord.TextChannel:60 of
 msgid ""
@@ -10339,31 +10339,33 @@ msgid ""
 "For a slightly more reliable method of fetching the last message, "
 "consider using either :meth:`history` or :meth:`fetch_message` with the "
 ":attr:`last_message_id` attribute."
-msgstr ""
+msgstr "チャンネル内の最新のメッセージを取得する信頼性の高い方法として、"
+":attr:`last_message_id` を :meth:`history`、もしくは :meth:`fetch_message`
+"とともに使用することを検討してください。"
 
 #: discord.TextChannel.last_message:13 of
 msgid "The last message in this channel or ``None`` if not found."
-msgstr ""
+msgstr "このチャンネルの最新のメッセージ。また、もし見つからなければNone。"
 
 #: discord.CategoryChannel.edit:3 discord.TextChannel.edit:3
 #: discord.VoiceChannel.edit:3 of
 msgid "Edits the channel."
-msgstr ""
+msgstr "チャンネルを編集します。"
 
 #: discord.CategoryChannel.edit:5 discord.TextChannel.edit:5
 #: discord.VoiceChannel.edit:5 of
 msgid ""
 "You must have the :attr:`~Permissions.manage_channels` permission to use "
 "this."
-msgstr ""
+msgstr "これを使用するには、:attr:`~Permissions.manage_channels`権限が必要です。"
 
 #: discord.TextChannel.edit:8 of
 msgid "The new channel name."
-msgstr ""
+msgstr "チャンネルの新しい名前。"
 
 #: discord.TextChannel.edit:12 discord.VoiceChannel.edit:14 of
 msgid "The new channel's position."
-msgstr ""
+msgstr "チャンネルの新しい位置。"
 
 #: discord.TextChannel.edit:16 discord.VoiceChannel.edit:16 of
 msgid ""
@@ -10373,7 +10375,7 @@ msgstr ""
 
 #: discord.TextChannel.edit:19 discord.VoiceChannel.edit:19 of
 msgid "The new category for this channel. Can be ``None`` to remove the category."
-msgstr ""
+msgstr "チャンネルの新しいカテゴリ。カテゴリから外すためにNoneを指定することも可能です。"
 
 #: discord.TextChannel.edit:22 of
 msgid ""
@@ -10383,11 +10385,11 @@ msgstr ""
 
 #: discord.TextChannel.edit:25 discord.VoiceChannel.edit:22 of
 msgid "The reason for editing this channel. Shows up on the audit log."
-msgstr ""
+msgstr "チャンネルを編集する理由。監査ログに表示されます。"
 
 #: discord.TextChannel.edit:28 of
 msgid "If position is less than 0 or greater than the number of channels."
-msgstr ""
+msgstr "positionが0より小さいか、チャンネル数より多い。"
 
 #: discord.TextChannel.edit:29 discord.VoiceChannel.edit:25 of
 #, fuzzy
@@ -10397,7 +10399,7 @@ msgstr ":exc:`.Forbidden` -- 指定のチャンネルを取得する権限がな
 #: discord.TextChannel.edit:30 discord.VoiceChannel.edit:26 of
 #, fuzzy
 msgid "Editing the channel failed."
-msgstr ":exc:`.HTTPException` -- チャンネルの取得に失敗した。"
+msgstr ":exc:`.HTTPException` -- チャンネルの編集に失敗した。"
 
 #: discord.TextChannel.delete_messages:3 of
 msgid ""
