@@ -10308,19 +10308,19 @@ msgstr ":class:`.Invite`"
 
 #: discord.TextChannel.members:1 of
 msgid "Returns all members that can see this channel."
-msgstr ""
+msgstr "チャンネルを閲覧することのできる全てのメンバーを返します。"
 
 #: discord.TextChannel.is_nsfw:1 of
 msgid "Checks if the channel is NSFW."
-msgstr ""
+msgstr "チャンネルがNSFWチャンネルであるかどうか。"
 
 #: discord.TextChannel.is_news:1 of
 msgid "Checks if the channel is a news channel."
-msgstr ""
+msgstr "チャンネルがニュースチャンネルであるかどうか。"
 
 #: discord.TextChannel.last_message:1 of
 msgid "Fetches the last message from this channel in cache."
-msgstr ""
+msgstr "チャンネルのキャッシュ内における最新のメッセージ。"
 
 #: discord.TextChannel.last_message:3 of
 msgid "The message might not be valid or point to an existing message."
@@ -10399,56 +10399,59 @@ msgstr ":exc:`.HTTPException` -- チャンネルの取得に失敗した。"
 msgid ""
 "Deletes a list of messages. This is similar to :meth:`Message.delete` "
 "except it bulk deletes multiple messages."
-msgstr ""
+msgstr "渡されたリスト内のメッセージを一括削除します。これは複数メッセージを削除するという点を除いて、:meth`Message.delete`と似ています。"
 
 #: discord.TextChannel.delete_messages:6 of
 msgid ""
 "As a special case, if the number of messages is 0, then nothing is done. "
 "If the number of messages is 1 then single message delete is done. If "
 "it's more than two, then bulk delete is used."
-msgstr ""
+msgstr "もしメッセージが1つも渡されなかった時、何も行われません。"
+"もし1つだけメッセージが渡されると、そのメッセージのみが単一で削除されます。"
+"もし2つ以上のメッセージが渡されると、それらのメッセージが一括で削除されます。"
 
 #: discord.TextChannel.delete_messages:10 of
 msgid ""
 "You cannot bulk delete more than 100 messages or messages that are older "
 "than 14 days old."
-msgstr ""
+msgstr "100個以上のメッセージを一括削除することはできません。また、14日以上前の古いメッセージを削除することもできません。"
 
 #: discord.TextChannel.delete_messages:13 of
 msgid ""
 "You must have the :attr:`~Permissions.manage_messages` permission to use "
 "this."
-msgstr ""
+msgstr "これを行うには、:attr:`~Permissions.manage_messages` 権限が必要です。"
 
 #: discord.TextChannel.delete_messages:16 of
 msgid "Usable only by bot accounts."
-msgstr ""
+msgstr "これはbotアカウントでのみ使用できます。"
 
 #: discord.TextChannel.delete_messages:18 of
 msgid "An iterable of messages denoting which ones to bulk delete."
-msgstr ""
+msgstr "一括削除したいメッセージを表すイテラブル。"
 
 #: discord.TextChannel.delete_messages:21 of
 msgid "The number of messages to delete was more than 100."
-msgstr ""
+msgstr "100個以上のメッセージが渡されました。"
 
 #: discord.TextChannel.delete_messages:22 of
 msgid ""
 "You do not have proper permissions to delete the messages or     you're "
 "not using a bot account."
-msgstr ""
+msgstr "メッセージを削除するための権限を持っていないか、あなたはbotアカウントではありません。"
 
 #: discord.TextChannel.delete_messages:23 of
 #, fuzzy
 msgid "Deleting the messages failed."
-msgstr "削除されたメッセージ。"
+msgstr "メッセージの削除に失敗しました。"
 
 #: discord.TextChannel.purge:3 of
 msgid ""
 "Purges a list of messages that meet the criteria given by the predicate "
 "``check``. If a ``check`` is not provided then all messages are deleted "
 "without discrimination."
-msgstr ""
+msgstr "``check``に与えられた条件を満たすメッセージを一括で削除します。"
+"もし``check``が指定されていないなら、内容に関係なく限界まで全てのメッセージを削除します。"
 
 #: discord.TextChannel.purge:7 of
 msgid ""
@@ -10456,7 +10459,8 @@ msgid ""
 "delete messages even if they are your own (unless you are a user "
 "account). The :attr:`~Permissions.read_message_history` permission is "
 "also needed to retrieve message history."
-msgstr ""
+msgstr "削除対象のメッセージが自分のものでない時には :attr:`~Permissions.manage_messages` 権限が必要です"
+"(あなたがユーザーアカウントで無い限り)。また、メッセージ履歴を取得するために :attr:`~Permissions.read_message_history` も必要になります。"
 
 #: discord.TextChannel.purge:12 of
 msgid ""
@@ -10467,35 +10471,35 @@ msgstr ""
 
 #: discord.TextChannel.purge:18 of
 msgid "Deleting bot's messages ::"
-msgstr ""
+msgstr "ボットによるメッセージを削除する ::"
 
 #: discord.TextChannel.purge:26 of
 msgid ""
 "The number of messages to search through. This is not the number of "
 "messages that will be deleted, though it can be."
-msgstr ""
+msgstr "検索するメッセージ数。これは削除が行われる可能性のあるメッセージ数です。"
 
 #: discord.TextChannel.purge:29 of
 msgid ""
 "The function used to check if a message should be deleted. It must take a"
 " :class:`Message` as its sole parameter."
-msgstr ""
+msgstr "メッセージを削除するか判断するための関数。これは :class:`Message` のみを引数として受け取ります。"
 
 #: discord.TextChannel.purge:32 of
 msgid "Same as ``before`` in :meth:`history`."
-msgstr ""
+msgstr "これは :meth:`history` における``before`` と同じです。"
 
 #: discord.TextChannel.purge:34 of
 msgid "Same as ``after`` in :meth:`history`."
-msgstr ""
+msgstr "これは :meth:`history` における``after`` と同じです。"
 
 #: discord.TextChannel.purge:36 of
 msgid "Same as ``around`` in :meth:`history`."
-msgstr ""
+msgstr "これは :meth:`history` における``around`` と同じです。"
 
 #: discord.TextChannel.purge:38 of
 msgid "Same as ``oldest_first`` in :meth:`history`."
-msgstr ""
+msgstr "これは :meth:`history` における``oldest_first`` と同じです。"
 
 #: discord.TextChannel.purge:40 of
 msgid ""
@@ -10504,23 +10508,24 @@ msgid ""
 ":attr:`Permissions.manage_messages`. When ``True``, will fall back to "
 "single delete if current account is a user bot, or if messages are older "
 "than two weeks."
-msgstr ""
+msgstr "もしこれが ``True`` なら、一括削除を使用します。これは``False``に設定すると :attr:`Permissions.manage_messages` 権限がなく、"
+"加えてbot自身のメッセージを削除する場合に便利です。"
 
 #: discord.TextChannel.purge:46 of
 msgid "You do not have proper permissions to do the actions required."
-msgstr ""
+msgstr "これを行うために必要な権限を持っていません。"
 
 #: discord.TextChannel.purge:47 of
 msgid "Purging the messages failed."
-msgstr ""
+msgstr "メッセージの一括削除に失敗しました。"
 
 #: discord.TextChannel.purge:49 of
 msgid "The list of messages that were deleted."
-msgstr ""
+msgstr "削除されたメッセージのリスト。"
 
 #: discord.TextChannel.purge:50 of
 msgid "List[:class:`.Message`]"
-msgstr ""
+msgstr "リスト[:class:`.Message`]"
 
 #: discord.TextChannel.webhooks:3 of
 msgid "Gets the list of webhooks from this channel."
@@ -11618,7 +11623,7 @@ msgstr "Discordの埋め込みを表します。"
 msgid ""
 "Returns the total size of the embed. Useful for checking if it's within "
 "the 6000 character limit."
-msgstr ""
+msgstr "埋め込みのサイズ。これは埋め込みの内容が6000文字以内に収まっているか確認するのに便利です。"
 
 #: discord.Embed:10 of
 msgid ""
@@ -11636,7 +11641,7 @@ msgstr "使いやすさを考慮して、strが渡されることを想定され
 
 #: discord.Embed:21 of
 msgid "The title of the embed. This can be set during initialisation."
-msgstr ""
+msgstr "埋め込みのタイトル。これは初期化をするときに設定することもできます。"
 
 #: discord.Embed:28 of
 msgid ""
