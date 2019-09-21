@@ -8072,15 +8072,15 @@ msgstr ""
 #: discord.Guild:25 of
 #, fuzzy
 msgid "The guild name."
-msgstr "IDから取得したギルド。"
+msgstr "ギルドの名前。"
 
 #: discord.Guild:31 of
 msgid "All emojis that the guild owns."
-msgstr ""
+msgstr "ギルドの全てのカスタム絵文字。"
 
 #: discord.Guild:33 of
 msgid "Tuple[:class:`Emoji`, ...]"
-msgstr ""
+msgstr "タプル[:class:`emoji`, ...]"
 
 #: discord.Guild:37 of
 msgid ""
@@ -8103,16 +8103,16 @@ msgstr ""
 #: discord.Guild:56 of
 #, fuzzy
 msgid "The guild's icon."
-msgstr "ギルドのウィジェット。"
+msgstr "ギルドのアイコン。"
 
 #: discord.Guild:62 discord.Widget:19 of
 #, fuzzy
 msgid "The guild's ID."
-msgstr "ギルドのウィジェット。"
+msgstr "ギルドのID。"
 
 #: discord.Guild:68 of
 msgid "The guild owner's ID. Use :attr:`Guild.owner` instead."
-msgstr ""
+msgstr "ギルドの所有者のID。"
 
 #: discord.Guild:74 of
 msgid ""
@@ -8139,12 +8139,12 @@ msgstr ""
 #: discord.Guild:96 of
 #, fuzzy
 msgid "The guild's banner."
-msgstr "ギルドのウィジェット。"
+msgstr "ギルドのバナー。"
 
 #: discord.Guild:102 of
 #, fuzzy
 msgid "The guild's description."
-msgstr "ギルドのウィジェット。"
+msgstr "ギルドの説明。"
 
 #: discord.Guild:108 of
 msgid ""
@@ -8199,11 +8199,11 @@ msgstr ""
 
 #: discord.Guild:138 of
 msgid "``INVITE_SPLASH``: Guild's invite page can have a special splash."
-msgstr ""
+msgstr "`INVITE_SPLASH``: `ギルドが、サーバー招待時にカスタムされた背景を利用できるか。"
 
 #: discord.Guild:139 of
 msgid "``VERIFIED``: Guild is a verified server."
-msgstr ""
+msgstr "``VERIFIED``: ギルドが認証済みサーバーであるか。"
 
 #: discord.Guild:140 of
 msgid "``PARTNERED``: Guild is a partnered server."
@@ -8211,7 +8211,7 @@ msgstr ""
 
 #: discord.Guild:141 of
 msgid "``MORE_EMOJI``: Guild is allowed to have more than 50 custom emoji."
-msgstr ""
+msgstr "``MORE_EMOJI``: ギルドに50個以上のカスタム絵文字を追加することができるか。"
 
 #: discord.Guild:142 of
 msgid "``DISCOVERABLE``: Guild shows up in Server Discovery."
@@ -8219,7 +8219,7 @@ msgstr ""
 
 #: discord.Guild:143 of
 msgid "``COMMERCE``: Guild can sell things using store channels."
-msgstr ""
+msgstr "``COMMERCE``: ギルドのストアチャンネルでゲームを販売できるか。"
 
 #: discord.Guild:144 of
 msgid "``LURKABLE``: Users can lurk in this guild via Server Discovery."
@@ -8227,15 +8227,15 @@ msgstr ""
 
 #: discord.Guild:145 of
 msgid "``NEWS``: Guild can create news channels."
-msgstr ""
+msgstr "``NEWS``: サーバーにニュースチャンネルを作ることができるか。"
 
 #: discord.Guild:146 of
 msgid "``BANNER``: Guild can upload and use a banner (i.e. :meth:`banner_url`)."
-msgstr ""
+msgstr "``BANNER``: サーバーにバナーをアップロードし使用することができるか。(:meth:`banne_url`)"
 
 #: discord.Guild:147 of
 msgid "``ANIMATED_ICON``: Guild can upload an animated icon."
-msgstr ""
+msgstr "``ANIMATED_ICON``: ギルドのアイコンに動くアイコンをアップロードできるか。"
 
 #: discord.Guild:149 discord.PartialInviteGuild:46 discord.Spotify.artists:3 of
 #, fuzzy
@@ -8448,7 +8448,7 @@ msgstr ":class:`bytes`"
 
 #: discord.Guild.get_member:1 of
 msgid "Returns a :class:`Member` with the given ID. If not found, returns None."
-msgstr ""
+msgstr "指定されたIDの :class:`Member`を返します。もし見つからなければ、Noneを返します。"
 
 #: discord.Guild.premium_subscribers:1 of
 msgid "A list of members who have \"boosted\" this guild."
@@ -8456,24 +8456,24 @@ msgstr ""
 
 #: discord.Guild.roles:1 of
 msgid "Returns a :class:`list` of the guild's roles in hierarchy order."
-msgstr ""
+msgstr "ギルドの役職の :class:`list` を階層順に返します。"
 
 #: discord.Guild.roles:3 of
 msgid "The first element of this list will be the lowest role in the hierarchy."
-msgstr ""
+msgstr "リスト内の最初の要素は最も階層の中で順位が低い役職になります。"
 
 #: discord.Guild.get_role:1 of
 msgid "Returns a :class:`Role` with the given ID. If not found, returns None."
-msgstr ""
+msgstr "指定されたIDの :class:`Role` を返します。もし見つからなければ、Noneを返します。"
 
 #: discord.Guild.default_role:1 of
 msgid "Gets the @everyone role that all members have by default."
-msgstr ""
+msgstr "全てのメンバーにデフォルトで与えられている @everyone の役職を取得します。"
 
 #: discord.Guild.owner:1 of
 #, fuzzy
 msgid "The member that owns the guild."
-msgstr "ギルドの名前。"
+msgstr "ギルドを所有しているメンバー。"
 
 #: discord.Guild.fetch_member:16 discord.Guild.get_member_named:20
 #: discord.Guild.owner:3 of
@@ -8487,7 +8487,7 @@ msgstr "役職の名前を返します。"
 
 #: discord.Guild.is_icon_animated:1 of
 msgid ":class:`bool`: Returns True if the guild has an animated icon."
-msgstr ""
+msgstr ":class:`bool`: アイコンが動くアイコンであるかを返します。"
 
 #: discord.Guild.icon_url_as:1 of
 msgid "Returns an :class:`Asset` for the guild's icon."
@@ -8607,13 +8607,13 @@ msgstr ""
 
 #: discord.Guild.create_text_channel:3 of
 msgid "Creates a :class:`TextChannel` for the guild."
-msgstr ""
+msgstr "ギルドに新しい :class:`TextChannel` を作成します。"
 
 #: discord.Guild.create_text_channel:5 of
 msgid ""
 "Note that you need the :attr:`~Permissions.manage_channels` permission to"
 " create the channel."
-msgstr ""
+msgstr "ただしチャンネルを作成するには :attr:`~premissions.manage_channels` の権限が必要です。"
 
 #: discord.Guild.create_text_channel:8 of
 msgid ""
@@ -8633,15 +8633,15 @@ msgstr ""
 
 #: discord.Guild.create_text_channel:21 of
 msgid "Creating a basic channel:"
-msgstr ""
+msgstr "通常のチャンネル作成："
 
 #: discord.Guild.create_text_channel:27 of
 msgid "Creating a \"secret\" channel:"
-msgstr ""
+msgstr "秘密のチャンネルを作成："
 
 #: discord.Guild.create_text_channel:38 discord.WidgetChannel:29 of
 msgid "The channel's name."
-msgstr ""
+msgstr "作成するチャンネルの名前。"
 
 #: discord.Guild.create_text_channel:40 of
 msgid ""
@@ -8658,21 +8658,21 @@ msgstr ""
 
 #: discord.Guild.create_text_channel:50 discord.TextChannel.edit:10 of
 msgid "The new channel's topic."
-msgstr ""
+msgstr "作成するチャンネルのチャンネルトピック。"
 
 #: discord.Guild.create_text_channel:52 of
 msgid ""
 "Specifies the slowmode rate limit for user in this channel, in seconds. "
 "The maximum value possible is `21600`."
-msgstr ""
+msgstr "チャンネルの低速モードの時間を指定します。最大値は `21600` です。"
 
 #: discord.Guild.create_text_channel:55 discord.TextChannel.edit:14 of
 msgid "To mark the channel as NSFW or not."
-msgstr ""
+msgstr "作成するチャンネルがNSFWチャンネルであるか。"
 
 #: discord.Guild.create_text_channel:57 of
 msgid "The reason for creating this channel. Shows up on the audit log."
-msgstr ""
+msgstr "チャンネルを作成する理由。監査ログに表示されます。"
 
 #: discord.Guild.create_text_channel:62 of
 msgid "The permission overwrite information is not in proper form."
@@ -8680,7 +8680,7 @@ msgstr ""
 
 #: discord.Guild.create_text_channel:64 of
 msgid "The channel that was just created."
-msgstr ""
+msgstr "作成したチャンネル。"
 
 #: discord.Guild.create_text_channel:65 of
 msgid ":class:`TextChannel`"
@@ -8715,22 +8715,22 @@ msgstr ""
 
 #: discord.Guild.leave:3 of
 msgid "Leaves the guild."
-msgstr ""
+msgstr "ギルドから脱退します。"
 
 #: discord.Guild.leave:7 of
 msgid ""
 "You cannot leave the guild that you own, you must delete it instead via "
 ":meth:`delete`."
-msgstr ""
+msgstr "もしあなたがギルドの所有者なら、ギルドを脱退することはできません。代わりに:meth`delete`でギルドを削除しなければなりません。"
 
 #: discord.Guild.leave:10 of
 #, fuzzy
 msgid "Leaving the guild failed."
-msgstr "ギルドのアイコンの変更"
+msgstr "ギルドからの脱退に失敗しました"
 
 #: discord.Guild.delete:3 of
 msgid "Deletes the guild. You must be the guild owner to delete the guild."
-msgstr ""
+msgstr "ギルドを削除します。あなたはそのギルドの所有者である必要があります。"
 
 #: discord.Guild.delete:6 of
 #, fuzzy
@@ -8744,7 +8744,7 @@ msgstr ":exc:`.Forbidden` -- 指定のチャンネルを取得する権限がな
 
 #: discord.Guild.edit:3 of
 msgid "Edits the guild."
-msgstr ""
+msgstr "ギルドを編集します。"
 
 #: discord.Guild.edit:5 of
 msgid ""
@@ -8754,7 +8754,7 @@ msgstr ""
 
 #: discord.Guild.edit:8 of
 msgid "The new name of the guild."
-msgstr ""
+msgstr "ギルドの新しい名前。"
 
 #: discord.Guild.edit:10 of
 msgid ""
@@ -9134,11 +9134,11 @@ msgstr ""
 
 #: discord.Guild.create_role:3 of
 msgid "Creates a :class:`Role` for the guild."
-msgstr ""
+msgstr "ギルドの新しい :class:`Role` を作成します。"
 
 #: discord.Guild.create_role:5 discord.Role.edit:8 of
 msgid "All fields are optional."
-msgstr ""
+msgstr "どのフィールドも任意です。"
 
 #: discord.Guild.create_role:7 of
 msgid "You must have the :attr:`~Permissions.manage_roles` permission to do this."
@@ -9146,11 +9146,11 @@ msgstr ""
 
 #: discord.Guild.create_role:10 of
 msgid "The role name. Defaults to 'new role'."
-msgstr ""
+msgstr "作成する役職の名前。デフォルトでは 'new role' です。"
 
 #: discord.Guild.create_role:12 of
 msgid "The permissions to have. Defaults to no permissions."
-msgstr ""
+msgstr "役職の持つ権限。デフォルトでは権限無しです。"
 
 #: discord.Guild.create_role:14 of
 msgid ""
@@ -9182,7 +9182,7 @@ msgstr ":exc:`.Forbidden` -- 招待を取り消す権限が無い。"
 #: discord.Guild.create_role:27 of
 #, fuzzy
 msgid "Creating the role failed."
-msgstr "役職の名前を返します。"
+msgstr "役職の作成に失敗しました。"
 
 #: discord.Guild.create_role:28 of
 msgid "An invalid keyword argument was given."
@@ -9198,7 +9198,7 @@ msgstr ""
 
 #: discord.Guild.kick:3 of
 msgid "Kicks a user from the guild."
-msgstr ""
+msgstr "ユーザーをギルドからキックします。"
 
 #: discord.Guild.ban:5 discord.Guild.kick:5 discord.Guild.unban:5 of
 msgid "The user must meet the :class:`abc.Snowflake` abc."
@@ -9210,23 +9210,23 @@ msgstr ""
 
 #: discord.Guild.kick:10 of
 msgid "The user to kick from their guild."
-msgstr ""
+msgstr "ギルドからキックするユーザー。"
 
 #: discord.Guild.kick:12 of
 msgid "The reason the user got kicked."
-msgstr ""
+msgstr "ユーザーをキックする理由。"
 
 #: discord.Guild.kick:15 of
 msgid "You do not have the proper permissions to kick."
-msgstr ""
+msgstr "ギルドからキックするための権限を持っていません。"
 
 #: discord.Guild.kick:16 of
 msgid "Kicking failed."
-msgstr ""
+msgstr "ギルドからのキックに失敗しました。"
 
 #: discord.Guild.ban:3 of
 msgid "Bans a user from the guild."
-msgstr ""
+msgstr "ギルドからユーザーをBANします。"
 
 #: discord.Guild.ban:7 discord.Guild.unban:7 of
 msgid "You must have the :attr:`~Permissions.ban_members` permission to do this."
@@ -9234,7 +9234,7 @@ msgstr ""
 
 #: discord.Guild.ban:10 of
 msgid "The user to ban from their guild."
-msgstr ""
+msgstr "ギルドからBANするユーザー。"
 
 #: discord.Guild.ban:12 of
 msgid ""
@@ -9244,15 +9244,15 @@ msgstr ""
 
 #: discord.Guild.ban:15 of
 msgid "The reason the user got banned."
-msgstr ""
+msgstr "ユーザーをBANする理由。"
 
 #: discord.Guild.ban:18 of
 msgid "You do not have the proper permissions to ban."
-msgstr ""
+msgstr "ユーザーをBANするための権限を持っていません。"
 
 #: discord.Guild.ban:19 of
 msgid "Banning failed."
-msgstr ""
+msgstr "ユーザーのBANに失敗しました。"
 
 #: discord.Guild.unban:3 of
 msgid "Unbans a user from the guild."
@@ -9353,7 +9353,7 @@ msgid ""
 "A datetime object that specifies the date and time in UTC that the member"
 " joined the guild for the first time. In certain cases, this can be "
 "``None``."
-msgstr ""
+msgstr "メンバーが初めてサーバーに参加した時刻の、UTCのdatetimeオブジェクト。特殊なケースでは、これは``None``になります。"
 
 #: discord.Member:34 of
 msgid "The activities that the user is currently doing."
@@ -9368,7 +9368,7 @@ msgstr ""
 #: discord.Member:40 of
 #, fuzzy
 msgid "The guild that the member belongs to."
-msgstr "更新された後のギルド。"
+msgstr "メンバーが参加しているギルド。"
 
 #: discord.CategoryChannel:33 discord.Emoji.guild:3 discord.Member:42
 #: discord.Role:59 discord.TextChannel:31 discord.VoiceChannel:31 of
@@ -9379,7 +9379,7 @@ msgstr ":class:`.Guild`"
 #: discord.Member:46 of
 #, fuzzy
 msgid "The guild specific nickname of the user."
-msgstr "ユーザーのプロフィール。"
+msgstr "ユーザーのニックネーム。"
 
 #: discord.Member:52 of
 msgid ""
@@ -9437,15 +9437,15 @@ msgstr ""
 msgid ""
 "A :class:`list` of :class:`Role` that the member belongs to. Note that "
 "the first element of this list is always the default '@everyone' role."
-msgstr ""
+msgstr "メンバーの持つ :class:`Role` の :class:`list`。このリストの最初の要素は常に '@everyone' 役職です。"
 
 #: discord.Member.roles:5 of
 msgid "These roles are sorted by their position in the role hierarchy."
-msgstr ""
+msgstr "リスト内の役職は役職の階層における位置でソートされています。"
 
 #: discord.Member.mention:1 of
 msgid "Returns a string that allows you to mention the member."
-msgstr ""
+msgstr "メンバーにメンションを送る時の文字列を返します。"
 
 #: discord.Member.activity:1 of
 msgid ""
@@ -9467,12 +9467,12 @@ msgstr ""
 
 #: discord.Member.mentioned_in:1 of
 msgid "Checks if the member is mentioned in the specified message."
-msgstr ""
+msgstr "指定されたメッセージにメンバーに対するメンションが含まれているかを返します。"
 
 #: discord.Member.top_role:1 of
 #, fuzzy
 msgid "Returns the member's highest role."
-msgstr "オブジェクトのハッシュを返します。"
+msgstr "メンバーの持つ役職の中で最も階層での順位が上のものを返します。"
 
 #: discord.Member.top_role:3 of
 msgid ""
@@ -9501,41 +9501,41 @@ msgstr ""
 #: discord.Member.voice:1 of
 #, fuzzy
 msgid "Returns the member's current voice state."
-msgstr "ボイスの状態が変わった `Member` 。"
+msgstr "メンバーのボイスの状態を返します。"
 
 #: discord.Member.ban:3 of
 msgid "Bans this member. Equivalent to :meth:`Guild.ban`."
-msgstr ""
+msgstr "このメンバーをBANします。これは :meth:`Guild.ban` と同じ働きをします。"
 
 #: discord.Member.unban:3 of
 msgid "Unbans this member. Equivalent to :meth:`Guild.unban`."
-msgstr ""
+msgstr "このメンバーのBANを解除します。これは :meth:`Guild.ban` と同じ働きをします。"
 
 #: discord.Member.kick:3 of
 msgid "Kicks this member. Equivalent to :meth:`Guild.kick`."
-msgstr ""
+msgstr "このメンバーをキックします。これは:meth:`Guild.ban` と同じ働きをします。"
 
 #: discord.Member.edit:3 of
 msgid "Edits the member's data."
-msgstr ""
+msgstr "メンバーのデータを編集します。"
 
 #: discord.Member.edit:5 of
 msgid ""
 "Depending on the parameter passed, this requires different permissions "
 "listed below:"
-msgstr ""
+msgstr "渡される引数によって、それぞれ必要な権限は異なります。"
 
 #: discord.Member.edit:8 of
 msgid "Parameter"
-msgstr ""
+msgstr "パラメーター"
 
 #: discord.Member.edit:8 of
 msgid "Permission"
-msgstr ""
+msgstr "権限"
 
 #: discord.Member.edit:10 of
 msgid "nick"
-msgstr ""
+msgstr "nick"
 
 #: discord.Member.edit:10 of
 msgid ":attr:`Permissions.manage_nicknames`"
@@ -9609,13 +9609,13 @@ msgstr ""
 
 #: discord.Member.move_to:3 of
 msgid "Moves a member to a new voice channel (they must be connected first)."
-msgstr ""
+msgstr "メンバーを別のボイスチャンネルに移動させます（メンバーは既にボイスチャンネルに接続している必要があります。）"
 
 #: discord.Member.move_to:5 of
 msgid ""
 "You must have the :attr:`~Permissions.move_members` permission to use "
 "this."
-msgstr ""
+msgstr "これを行うには、権限 :attr:`~Permissions.move_members` が必要です。"
 
 #: discord.Member.move_to:8 of
 msgid "This raises the same exceptions as :meth:`edit`."
@@ -9623,17 +9623,17 @@ msgstr ""
 
 #: discord.Member.move_to:10 of
 msgid "Can now pass ``None`` to kick a member from voice."
-msgstr ""
+msgstr "``None``を渡すことでメンバーをボイスチャンネルからキックすることができます。"
 
 #: discord.Member.move_to:13 of
 msgid ""
 "The new voice channel to move the member to. Pass ``None`` to kick them "
 "from voice."
-msgstr ""
+msgstr "メンバーを移動する移動先のチャンネル。``None``を渡すとメンバーをボイスチャンネルからキックします。"
 
 #: discord.Member.add_roles:3 of
 msgid "Gives the member a number of :class:`Role`\\s."
-msgstr ""
+msgstr "メンバーに :class:`Role` を与えます。"
 
 #: discord.Member.add_roles:8 of
 msgid ""
@@ -9671,39 +9671,39 @@ msgstr ""
 
 #: discord.Member.bot:1 of
 msgid "Equivalent to :attr:`User.bot`"
-msgstr ""
+msgstr ":attr:`User.bot` と同じです。"
 
 #: discord.Member.created_at:1 of
 msgid "Equivalent to :attr:`User.created_at`"
-msgstr ""
+msgstr ":attr:`User.created_at` と同じです。"
 
 #: discord.Member.default_avatar:1 of
 msgid "Equivalent to :attr:`User.default_avatar`"
-msgstr ""
+msgstr ":attr:`User.default_avatar` と同じです。"
 
 #: discord.Member.default_avatar_url:1 of
 msgid "Equivalent to :attr:`User.default_avatar_url`"
-msgstr ""
+msgstr ":attr:`User.default_avatar_url` と同じです。"
 
 #: discord.Member.discriminator:1 of
 msgid "Equivalent to :attr:`User.discriminator`"
-msgstr ""
+msgstr ":attr:`User.discriminator` と同じです。"
 
 #: discord.Member.dm_channel:1 of
 msgid "Equivalent to :attr:`User.dm_channel`"
-msgstr ""
+msgstr ":attr:`User.dm_channel` と同じです。"
 
 #: discord.Member.id:1 of
 msgid "Equivalent to :attr:`User.id`"
-msgstr ""
+msgstr "Equivalent to :attr:`User.id` と同じです。"
 
 #: discord.Member.name:1 of
 msgid "Equivalent to :attr:`User.name`"
-msgstr ""
+msgstr "Equivalent to :attr:`User.name` と同じです。"
 
 #: discord.Member.relationship:1 of
 msgid "Equivalent to :attr:`User.relationship`"
-msgstr ""
+msgstr ":attr:`User.relationship` と同じです。"
 
 #: discord.Member.remove_roles:3 of
 msgid "Removes :class:`Role`\\s from this member."
