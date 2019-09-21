@@ -8491,18 +8491,19 @@ msgstr ":class:`bool`: アイコンが動くアイコンであるかを返しま
 
 #: discord.Guild.icon_url_as:1 of
 msgid "Returns an :class:`Asset` for the guild's icon."
-msgstr ""
+msgstr "ギルドアイコンの :class:`Asset` を返します。"
 
 #: discord.Guild.icon_url_as:7 of
 msgid ""
 "The format to attempt to convert the icon to. If the format is ``None``, "
 "then it is automatically detected into either 'gif' or static_format "
 "depending on the icon being animated or not."
-msgstr ""
+msgstr "アイコンを変換する形式。もし形式が``None``なら、アイコンが動くアイコンであるかに応じて"
+"'gif' または static_format が自動的に検出されます。"
 
 #: discord.Guild.icon_url_as:12 of
 msgid "Format to attempt to convert only non-animated icons to."
-msgstr ""
+msgstr "動かないアイコンとして変換を試みる場合の形式。"
 
 #: discord.Guild.banner_url:1 discord.PartialInviteGuild.banner_url:1 of
 #, fuzzy
@@ -8511,7 +8512,7 @@ msgstr "役職の名前を返します。"
 
 #: discord.Guild.banner_url_as:1 of
 msgid "Returns an :class:`Asset` for the guild's banner."
-msgstr ""
+msgstr "ギルドのバナーの :class:`Asset` を返します。"
 
 #: discord.Guild.banner_url_as:3 of
 msgid ""
@@ -8544,7 +8545,7 @@ msgstr ""
 
 #: discord.Guild.member_count:1 of
 msgid "Returns the true member count regardless of it being loaded fully or not."
-msgstr ""
+msgstr "完全にロードされているかに関係なく、本来のギルドのメンバー数を返します。"
 
 #: discord.Guild.chunked:1 of
 msgid "Returns a boolean indicating if the guild is \"chunked\"."
@@ -8648,13 +8649,15 @@ msgid ""
 "A :class:`dict` of target (either a role or a member) to "
 ":class:`PermissionOverwrite` to apply upon creation of a channel. Useful "
 "for creating secret channels."
-msgstr ""
+msgstr "チャンネル作成時に適用される、役職またはメンバーに対する "
+":class:`PermissionOverwrite` の :class:`dict`。これは秘密のチャンネルを作成する際に便利です。"
 
 #: discord.Guild.create_text_channel:43 of
 msgid ""
 "The category to place the newly created channel under. The permissions "
 "will be automatically synced to category if no overwrites are provided."
-msgstr ""
+msgstr "作成したチャンネルを追加するカテゴリ。`overwrite`が指定されない場合は、"
+"チャンネルの権限は自動的に、カテゴリにおける権限に同期されます。"
 
 #: discord.Guild.create_text_channel:50 discord.TextChannel.edit:10 of
 msgid "The new channel's topic."
@@ -8676,7 +8679,7 @@ msgstr "チャンネルを作成する理由。監査ログに表示されます
 
 #: discord.Guild.create_text_channel:62 of
 msgid "The permission overwrite information is not in proper form."
-msgstr ""
+msgstr "overwriteの情報が適切ではありません。"
 
 #: discord.Guild.create_text_channel:64 of
 msgid "The channel that was just created."
@@ -8691,7 +8694,8 @@ msgid ""
 "This is similar to :meth:`create_text_channel` except makes a "
 ":class:`VoiceChannel` instead, in addition to having the following new "
 "parameters."
-msgstr ""
+msgstr "これは :meth:`create_text_channel` に似ていますが、 :class:`VoiceChannel` "
+"は他に次のパラメーターを受け取ります。"
 
 #: discord.Guild.create_voice_channel:6 discord.VoiceChannel:54 of
 msgid "The channel's preferred audio bitrate in bits per second."
